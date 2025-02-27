@@ -1,0 +1,14 @@
+.site-header {
+    background-color: aqua;
+    padding: 2rem 0;
+}
+
+.site-header ul {
+    display: flex;
+    
+    
+}
+
+.site-header ul li {
+    justify-items:space-around;
+}
