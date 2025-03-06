@@ -1,12 +1,17 @@
-import Header from "../global/Header";
-import Footer from "../global/Footer";
+// import Header from "../global/Header";
+// import Footer from "../global/Footer";
 
 function About() {
     return(
         <>
-        <Header />
-        <h2>About page</h2>
-        <Footer />
+    
+        <div className="container">
+            <div className="gir">
+                <div className="col-12">
+                    <h2>About page</h2>
+                </div>
+            </div>
+        </div>
         </>
     )
     

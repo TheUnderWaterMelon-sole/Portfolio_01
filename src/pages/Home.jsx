@@ -1,17 +1,32 @@
-import Header from "../global/Header";
-import Footer from "../global/Footer";
+// import Header from "../global/Header";
+// import Footer from "../global/Footer";
+import homeBanner from "../assets/homeBanner.jpeg";
 
 import "./Home.css";
 
 function Home() {
     return(
-        <>
-            <Header />
-            <main className="home">
-                <h1>Home Page</h1>
-            </main>
-            <Footer />
-        </>
+        
+        <main className="home">
+                
+            <div className="container" id="MY_HOME_PAGE">
+                <div className="grid vertical-center">
+                    <div className="col-12 col-4-lg">
+                        <img src={homeBanner} alt="Woman surfingn in suset wave" />
+                    
+                    </div>
+                    <div className="col-12 col-6-lg">
+                        <h1 className="h2"> Welcome to my website</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, enim! Adipisci officia exercitationem odio provident.</p>
+
+                    </div>
+
+                </div>
+            </div>
+           
+         </main>
+           
+        
     )
 }
 

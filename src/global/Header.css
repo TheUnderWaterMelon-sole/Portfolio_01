@@ -5,10 +5,11 @@
 
 .site-header ul {
     display: flex;
-    
-    
+    gap: 1rem;
+    justify-content: end;
 }
 
-.site-header ul li {
-    justify-items:space-around;
+.site-header__logo {
+    max-width: 80px;
 }
+
