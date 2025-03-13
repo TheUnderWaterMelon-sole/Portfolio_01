@@ -16,7 +16,7 @@ function Home() {
                     
                     </div>
                     <div className="col-12 col-6-lg">
-                        <h1 className="h2"> Welcome to my website</h1>
+                        <h1 className="h2 "> Welcome to my website</h1>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, enim! Adipisci officia exercitationem odio provident.</p>
 
                     </div>
