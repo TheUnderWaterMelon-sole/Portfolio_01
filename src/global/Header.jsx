@@ -10,7 +10,7 @@ function Header() {
         <>
             <header className="site-header">
                 <div className="container">
-                    <div className="grid vertical-center">
+                    <div className="flex">
                         <div className="col-3">
                         <img src={logo} className="site-header__logo" alt="Logo" />
                         </div>
