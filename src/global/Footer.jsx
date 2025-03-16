@@ -1,40 +1,42 @@
+import {Link} from "react-router";
+import "../main.css";
 
-import { Box, Container, Typography, Link, Grid } from '@mui/material';
-import LogoPlaceholder from '@mui/icons-material/Casino'; // Placeholder icon for logo
-import "../css/main.css";
+// images
+import soleLogo from "../assets/sole-logo.png";
+
 function Footer() {
-  return (
-    <Box component="footer" sx={{ bgcolor: 'background.paper', py: 6 }}>
-      <Container maxWidth="lg">
-        <Grid container spacing={2} alignItems="center" sx={{ mb: 3 }}>
-          <Grid item xs={6}>
-            <Box sx={{ display: 'flex', alignItems: 'center' }}>
-              <LogoPlaceholder sx={{ mr: 1 }} />
-              <Typography variant='h4'>Logo</Typography>
-            </Box>
-          </Grid>
-          <Grid item xs={6}>
-            <Box sx={{ display: 'flex', justifyContent: 'flex-end' }}>
-              <Link to ="/" color="inherit" sx={{ mx: 1 }}>Home</Link>
-              <Link to="/about"color="inherit" sx={{ mx: 1 }}>About</Link>
-              <Link to="/projects"  color="inherit" sx={{ mx: 1 }}>Projects</Link>
-            </Box>
-          </Grid>
-        </Grid>
-        <Typography variant="h4" align="center" gutterBottom>
-          My Website
-        </Typography>
-        <Typography variant="subtitle1" align="center" color="text.secondary" component="p">
-          © {new Date().getFullYear()} Your Company Name
-        </Typography>
-        <Typography variant="body2" color="text.secondary" align="center">
-          <Link color="inherit" href="#">Privacy Policy</Link>
-          {' | '}
-          <Link color="inherit" href="#">Terms of Service</Link>
-        </Typography>
-      </Container>
-    </Box>
-  );
+    return(
+    <>
+        <footer className="site-footer">
+            <div className="container">
+                <div className="grid p-24">
+                    <div className="col-2">
+                        <img src={soleLogo} className="site-footer__logo" alt="sole esnaola logo" />
+                    </div>
+              
+                   
+                    <div className="footer-nav flex col-10 horizontal-end h3">
+                        <ul>
+                            <li><Link to="/">Home</Link></li>
+                            <li><Link to="/about">About</Link></li>
+                            <li><Link to="/projects" >Project</Link></li>
+                        </ul>
+                    </div>
+                    <div className="col-12 pt-8 h5">
+                        <div className="footer-terms">
+                            <span className="h3">My Brand</span>
+                            <span className="h3">&copy; 2023 My Brand</span>
+                            <br></br>
+                            <a href="#" className="terms-link">Terms and Conditions</a>
+                            <a href="#" className="terms-link">Privacy Policy</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          
+        </footer>
+    </>
+    )
 }
 
 export default Footer;

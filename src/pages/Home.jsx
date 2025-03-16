@@ -8,20 +8,27 @@ function Home() {
     return(
         
         <main className="home">      
-            <div className="container" id="MY_HOME_PAGE">
+            <div className="container hero" id="MY_HOME_PAGE">
                 <div className="hero grid vertical-center">
                     <div className=" col-12 col-6-lg">
                         <img src={homeBanner} alt="Woman surfingn in suset wave" />    
                         
                     </div>
-                    <div className="col-12 col-4-lg">
-                        <h1 className="h1 "> Welcome to my website</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, enim! Adipisci officia exercitationem odio provident.</p>
+                    <div className="flex-column col-12 col-6-lg">
+                        <h2 className="h1"> Welcome to my website</h2>
+                        <h1 className="h2" >I am UXUI and Brand designer based in Vancouver </h1>
                     </div>
-
                 </div>
             </div>
            
+          <section className="container content">
+            <h3>Section Title</h3>
+            <h4>Brief Description</h4>
+            <div className="image-gallery">
+           
+            </div>
+
+          </section>
          </main>
            
         
