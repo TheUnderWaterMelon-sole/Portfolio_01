@@ -1,16 +1,20 @@
 /* typography */
 
 @import url('https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&family=Syne:wght@400..800&display=swap');
-h1 {font-size: 2.8rem;
+h1, .h1 {font-size: 3.2rem;
     font-family: "Syncopate", sans-serif; 
     font-weight: bold; 
     line-height: 1.5; }
-h2, .h2 {font-size: 2.4rem}
-h3 {font-size: 2rem }
-h4 {font-size: 1.6rem}
-h5 {font-size: 1.6rem}
-h6 {font-size: 1.2rem}
-p {font-size: 1.6rem }
+h2, .h2 {font-size: 2.8rem ;font-family: "Syne", sans-serif; 
+    font-weight: bold;}
+h3, .h3 {font-size: 2.4rem }
+h4, .h4  {font-size: 2rem}
+h5, .h5 {font-size: 1.2rem}
+h6, .h6 {font-size: 1rem}
+p, .p {font-size: 1.6rem }
+
+
+
 
 /* Send footer to bottom */
 html, body, #root {
@@ -26,6 +30,14 @@ html, body, #root {
 
 /* helpers */
 .vertical-center {align-items: center}
+.horizontal-end {justify-content: flex-end;}
+.flex {
+    display: flex;
+}
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
 
 main{
     flex-grow: 1;
@@ -35,9 +47,9 @@ main{
 /* Grid Syste  */
 
 .container {
-    max-width: 80rem; /* Maximum width of the website's grid */
+    max-width: 100vw; /* Maximum width of the website's grid */
     margin: 0 auto;
-    padding: 0 1rem;
+    padding:0;
 }
 
 .grid {
@@ -45,6 +57,32 @@ main{
     grid-template-columns: repeat(12, 1fr);
     gap: 1rem;
 }
+
+
+/* footer */
+.site-footer__logo{
+    width: 10rem;
+ }
+ 
+ .footer-nav ul li {
+    font-weight: 500;
+    border-bottom: 2px solid black;
+ }
+
+ .footer-nav ul {
+    display: flex;
+    gap: 4rem;
+}
+
+ .footer-terms {
+    text-align: center;
+ }
+
+ .terms-link {
+    color:blueviolet;
+    text-decoration: underline;
+
+ }
 
 .col-1 { grid-column: span 1; }
 .col-2 { grid-column: span 2; }
@@ -60,7 +98,7 @@ main{
 .col-12 { grid-column: span 12; }
 
 /* MARGINS */
-m-0 { margin: 0px; }
+.m-0 { margin: 0px; }
 .m-4 { margin: 4px; }
 .m-8 { margin: 8px; }
 .m-12 { margin: 12px; }
