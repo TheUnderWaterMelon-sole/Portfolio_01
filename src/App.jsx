@@ -16,8 +16,6 @@ import "./css/reset.css";
 function App() {
   return (
    
-    
-
       <Routes>  
         <Route path="/" element={<PageWrap />}>
           <Route index element={<Home />} />

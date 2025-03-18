@@ -1,0 +1,37 @@
+@import "../main.css";
+
+
+.card-container{
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 65vh;
+    border-radius: 15px;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    box-shadow: 0.4rem 0.3rem 0.4rem rgba(56, 59, 59, 0.3); ;
+
+   
+}
+.card-image {
+    height: 65%;
+    overflow: hidden;
+    border-radius: 16px;
+
+   justify-items: center;
+    
+}
+.card-image img {
+ 
+
+}
+.card-info {
+    border-bottom: 1px solid black;
+    justify-items: flex-start;
+    padding: 0 1.8rem;
+}
+
+button {
+    height: 4rem;
+    padding: 0 1.8rem;
+}

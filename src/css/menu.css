@@ -1,16 +1,18 @@
+
 /* Position and sizing of burger button */
 
 .bm-burger-button {
     position: fixed;
-    width: 36px;
-    height: 30px;
-    left: 36px;
-    top: 36px;
+    width: 46px;
+    height: 40px;
+    right: 3.6rem;
+    top: 3.6rem;
   }
   /* Container */
   .outer-container {
     height: 100%;
     overflow: hidden;
+   
   }
   /* Color/shape of burger icon bars */
   .bm-burger-bars {
@@ -26,11 +28,16 @@
   .bm-cross-button {
     height: 24px;
     width: 24px;
+
   }
   
   /* Color/shape of close button cross */
   .bm-cross {
     background: #bdc3c7;
+  }
+
+  .bm-cross-button:hover {
+    background: #dd8902;
   }
   
   /*
@@ -40,13 +47,17 @@
   .bm-menu-wrap {
     position: fixed;
     height: 100%;
+    margin-right: 2.4rem;
+    
   }
   
   /* General sidebar styles */
   .bm-menu {
     background: rgba(0, 0, 0, 0.7);;
-    padding: 2.5em 1.5em 0;
+    padding: rem 2.4rem 2.8rem 1.6rem;
     font-size: 1.15em;
+    width: 40vw;
+    
   }
   
   /* Morph shape necessary with bubble or elastic */
@@ -57,12 +68,19 @@
   /* Wrapper for item list */
   .bm-item-list {
     color: #b8b7ad;
-    padding: 0.8em;
+    padding: 4.8rem 2rem;
   }
   
   /* Individual item */
   .bm-item {
     display: inline-block;
+    padding: 3.2rem 3.2rem 0 0;
+    
+  }
+
+  .bm-item:hover {
+    color: #dd8902;
+    font-size: 90%;
   }
   
   /* Styling of overlay */

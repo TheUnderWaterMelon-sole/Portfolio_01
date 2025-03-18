@@ -2,12 +2,16 @@
 import React, { useState } from "react";
 import ProjectCard from "../global/ProjectCard";
 
+import "../main.css";
+import "../css/project.css"
+
 // images
 import locamotionLogo from "../assets/project-images/p1-LOCAMOTION_LogoLaunch._sqr.png";
 import bazaWireframes from "../assets/project-images/p2-Baza_project_slides3.18 AM.png";
 import marukiLogo from "../assets/project-images/Maruki_logos_b_W_600x400.png";
 import rollerskatePhoto from "../assets/project-images/Skatebubbles_MDIA1165_FINALproject.jpg";
 import madonnaIllus from "../assets/Madonna_Design_SoleEsnaola_Assignment01.jpg";
+import { HeartOff } from "lucide-react";
 
 const MyProjects = [
   {
@@ -60,21 +64,24 @@ function Projects() {
   };
 
   return (
-    <div className="container mx-auto p-6">
-      <h1 className="text-2xl font-bold text-center mb-6">My Projects</h1>
-      
-      {/* Grid Layout for Projects */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-        {projects.map((project) => (
+    <>
+    <header className="hero">
+      <h1 className="h1 text-center py-24">My Projects</h1>
+    </header>
+    <main className="projects px-24">      
+    <div className="projects-container grid">
+      {projects.map((project) => (
+        <div key={project.id} className="card col-4">
           <ProjectCard
-            key={project.id}
             project={project}
             favorites={favorites}
             toggleFavorite={toggleFavorite}
           />
+          </div>
         ))}
       </div>
-    </div>
+    </main>
+    </>
   );
 }
 

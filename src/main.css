@@ -1,6 +1,5 @@
-/* typography */
 
-@import url('https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&family=Syne:wght@400..800&display=swap');
+/* typography */
 h1, .h1 {font-size: 3.2rem;
     font-family: "Syncopate", sans-serif; 
     font-weight: bold; 
@@ -12,9 +11,6 @@ h4, .h4  {font-size: 2rem}
 h5, .h5 {font-size: 1.2rem}
 h6, .h6 {font-size: 1rem}
 p, .p {font-size: 1.6rem }
-
-
-
 
 /* Send footer to bottom */
 html, body, #root {
@@ -31,12 +27,17 @@ html, body, #root {
 /* helpers */
 .vertical-center {align-items: center}
 .horizontal-end {justify-content: flex-end;}
+.text-center {text-align: center;}
 .flex {
     display: flex;
 }
 .flex-column {
     display: flex;
     flex-direction: column;
+}
+
+.icon-on {
+    color: coral;
 }
 
 main{
@@ -59,7 +60,13 @@ main{
 }
 
 
+
 /* footer */
+
+.site-footer {
+    border-top: 2px solid rgba(0, 0, 0, 0.5);
+    background-color: rgba(70, 142, 155, 0.3);
+}
 .site-footer__logo{
     width: 10rem;
  }

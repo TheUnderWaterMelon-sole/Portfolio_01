@@ -1,6 +1,6 @@
 // import Header from "../global/Header";
 // import Footer from "../global/Footer";
-import homeBanner from "../assets/homeBanner.jpeg";
+import homeBanner from "../assets/homeBanner.jpg";
 
 import "./Home.css";
 
@@ -10,9 +10,9 @@ function Home() {
         <main className="home">      
             <div className="container hero" id="MY_HOME_PAGE">
                 <div className="hero grid vertical-center">
-                    <div className=" col-12 col-6-lg">
-                        <img src={homeBanner} alt="Woman surfingn in suset wave" />    
-                        
+                    <div className="hero-image col-12 col-12-lg">
+                        <img src={homeBanner} alt="red boat floating on calm green water" />    
+              
                     </div>
                     <div className="flex-column col-12 col-6-lg">
                         <h2 className="h1"> Welcome to my website</h2>
