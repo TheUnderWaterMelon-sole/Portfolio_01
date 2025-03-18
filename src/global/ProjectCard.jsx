@@ -12,17 +12,17 @@ function ProjectCard({ project, favorites, toggleFavorite }) {
       <div className="card-container flex m-24 ">
         {/* Card Artwork */}
         <div className="card-image">
-          <img className="mb-8"
+          <img className="mb-4"
             src={project.projectImage}
             alt={project.title}
           />
         </div>
 
         {/* CardInfo */}
-        <div className="card-info mb-8">
-          <h2 className="h2">{project.title}</h2>
-          <p className="p">{project.projectType}</p>
-          <p className="p">${project.shortDescription}</p>
+        <div className="card-info mb-4">
+          <h2 className="h2 mb-12">{project.title}</h2>
+          <h3 className="h3 ">{project.projectType}</h3>
+          <p className="p pt-16">{project.shortDescription}</p>
         </div>
 
         {/* Favorite Button */}

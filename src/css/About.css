@@ -1,0 +1,13 @@
+.about-info {
+   
+    justify-content: center;
+}
+
+.about-image {
+    
+    justify-content: center;
+}
+
+.about-image img {
+    max-height: 55vh;
+}
